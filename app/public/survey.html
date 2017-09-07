@@ -8,10 +8,9 @@
     <!-- Latest compiled and minified CSS & JS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -19,8 +18,6 @@
     <!-- Chosen -->
     <link rel="stylesheet" href="
 https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
 
 </head>
 
@@ -28,10 +25,11 @@ https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 
     <div class="container">
 
-        <h2>Survey Questions</h2>
+        <h2>Help Us Find You a Friend!</h2>
+
         <hr>
 
-        <h3><strong>About You</strong></h3>
+        <h3><strong>Answer the following to get your match:</strong></h3>
         <h4>Name (Required)</h4>
         <input type="text" name="" id="name" class="form-control" required="">
 
@@ -121,7 +119,7 @@ https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
       	</select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q5_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a>
+        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q5_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div></div></a>
             <div class="chosen-drop">
                 <div class="chosen-search"><input type="text" autocomplete="off"></div>
                 <ul class="chosen-results"></ul>
@@ -139,7 +137,7 @@ https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
       	</select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q6_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a>
+        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q6_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div></div></a>
             <div class="chosen-drop">
                 <div class="chosen-search"><input type="text" autocomplete="off"></div>
                 <ul class="chosen-results"></ul>
@@ -200,7 +198,7 @@ https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 
         <h3><strong>Question 10</strong></h3>
         <h4>I am easy to satisfy.</h4>
-        <select data-placeholder="" class="chosen-select" id="q10" style="display: none;">
+        <select data-placeholder="Select an Option" class="chosen-select" id="q10" style="display: none;">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -252,6 +250,14 @@ https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
 
     <script type="text/javascript">
         // Chosen CSS
