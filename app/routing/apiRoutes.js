@@ -12,17 +12,17 @@ module.exports = function (app) {
     //this API POST request handles when a user submits data to the server through the html form.
 
     app.post("/api/friends", function (req, res) {
-        //        friends.push(req.body);
-        //        res.json(true);
-        var user_info = req.body;
-
-        friends.forEach(function (friend, i) {
-            friend.scores.forEach(function (score, i) {
-                if (score == user_info.scores[i]) {
-                    console.log('Same Score');
-                }
-            });
-        });
+                friends.push(req.body);
+                res.json(true);
+//        var user_info = req.body;
+//
+//        friends.forEach(function (friend, i) {
+//            friend.scores.forEach(function (score, i) {
+//                if (score == user_info.scores[i]) {
+//                    console.log('Same Score');
+//                }
+//            });
+//        });
         res.json(friends);
     });
 
