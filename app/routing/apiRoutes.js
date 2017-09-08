@@ -16,7 +16,7 @@ module.exports = function (app) {
         //        res.json(true);
         var user_info = req.body;
 
-        friends.forEach(function (friend) {
+        friends.forEach(function (friend, i) {
             friend.scores.forEach(function (score, i) {
                 if (score == user_info.scores[i]) {
                     console.log('Same Score');
