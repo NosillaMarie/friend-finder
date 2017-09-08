@@ -40,11 +40,11 @@ function getMatches() {
         $.post('/api/friends', userData, function (data) {
             console.log(data);
             // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            //            $("#matchName").text(data.name);
-            //            $('#matchImg').attr("src", data.photo);
+                        $("#matchName").text(data.name);
+                        $('#matchImg').attr("src", data.photo);
 
-            // Show the modal with the best match 
-            //            $("#resultsModal").modal('toggle');
+                        Show the modal with the best match
+                        $("#resultsModal").modal('toggle');
 
         });
     } else {
