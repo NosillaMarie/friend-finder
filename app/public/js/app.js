@@ -43,7 +43,7 @@ function getMatches() {
                         $("#matchName").text(data.name);
                         $('#matchImg').attr("src", data.photo);
 
-                        Show the modal with the best match
+//                        Show the modal with the best match
                         $("#resultsModal").modal('toggle');
 
         });
