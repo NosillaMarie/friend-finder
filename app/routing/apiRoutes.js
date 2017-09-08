@@ -23,7 +23,7 @@ module.exports = function (app) {
                 }
             });
         });
-        res.json(friends);
+        res.json(true);
     });
 
 };
