@@ -69,7 +69,7 @@ function getMatches() {
 
             //                        Show the modal with the best match
             $("#resultsModal").modal('toggle');
-            matchFriends();
+
 
         });
     } else {
@@ -106,3 +106,4 @@ function matchFriends() {
 $("#submit").on("click", getMatches);
 
 getFriends();
+matchFriends()
