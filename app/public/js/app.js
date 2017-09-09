@@ -80,11 +80,12 @@ function getMatches() {
 
 $("#form1").on('submit', function (event) {
     event.preventDefault();
-    let newFriend = {
+    var newFriend = {
         name: $("#name").val(),
         photo: $("#picURL").val(),
         scores: [$("#Q1").val(), $("#Q2").val(), $("#Q3").val(), $("#Q4").val(), $("#Q5").val(), $("#Q6").val(), $("#Q7").val(), $("#Q8").val(), $("#Q9").val(), $("#Q10").val()]
     };
+    console.log("hello");
     console.log(newFriend);
 
     $.post("/api/new", newFriend, function (data, status) {
