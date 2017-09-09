@@ -12,18 +12,35 @@ module.exports = function (app) {
     //this API POST request handles when a user submits data to the server through the html form.
 
     app.post("/api/friends", function (req, res) {
-//                    var user_info = req.body;
-//
-//            friends.forEach(function (friend, i) {
-//                friend.scores.forEach(function (score, i) {
-//                    if (score == user_info.scores[i]) {
-//                        console.log('Same Score');
-//                    }
-//                });
-//            });
-                friends.push(req.body);
-                res.json(true);
-        res.json(friends);
+        var user_info = req.body;
+
+        var bestMatch = {
+            name: "",
+            photo: "",
+            friendDifference: 1000
+        };
+        var userScores = user_info.scores;
+
+        console.log(userScores);
+
+        var totalDifference = 0;
+        for (var i = 0; i < friends.length; i++) {
+            console.log(friends[i]);
+            totalDifference = 0;
+        }
+        for (var j = 0; i < friends[i].scores[j]; j++) {
+            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+
+            if (totalDifference <= bestMatch.friendDifference) {
+                bestMatch.name = friends[i].name;
+                bestMatch.photo = friends[i].photo;
+                bestMatch.friendDifference = totalDifference;
+            }
+        }
     });
 
+
+    friends.push(req.body);
+    res.json(true);
+    res.json(friends);
 };
