@@ -78,27 +78,6 @@ function getMatches() {
     return false;
 }
 
-$("#form1").on('submit', function (event) {
-    event.preventDefault();
-    var newFriend = {
-        name: $("#name").val(),
-        photo: $("#picURL").val(),
-        scores: [$("#Q1").val(), $("#Q2").val(), $("#Q3").val(), $("#Q4").val(), $("#Q5").val(), $("#Q6").val(), $("#Q7").val(), $("#Q8").val(), $("#Q9").val(), $("#Q10").val()]
-    };
-    console.log("hello");
-    console.log(newFriend);
-
-    $.post("/api/new", newFriend, function (data, status) {
-        $("#matchImage").append("Your match is " + data.name + "<br><img width='320' height='240' src= '" + data.photo + "'/>");
-        console.log(data);
-        console.log(status);
-    });
-    $("#modal-content,#modal-background").fadeIn();
-    $("#modal-content,#modal-background").toggleClass("active");
-
-    return false;
-});
-
 $("#submit").on("click", getMatches);
 
 getFriends();
