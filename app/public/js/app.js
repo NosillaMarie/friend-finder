@@ -36,6 +36,18 @@ function getMatches() {
             //            $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         };
 
+        function bestMatch() {
+
+            var user_info = req.body;
+
+            friends.forEach(function (friend, i) {
+                friend.scores.forEach(function (score, i) {
+                    if (score == user_info.scores[i]) {
+                        console.log('Same Score');
+                    }
+                });
+            });
+        }
 
         // AJAX post the data to the friends API. 
         $.post('/api/friends', userData, function (data) {
