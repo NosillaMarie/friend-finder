@@ -1,5 +1,3 @@
-var friends = require("../data/friends");
-
 function getFriends() {
     $.getJSON('/api/friends')
         .then(function (data) {
@@ -38,29 +36,29 @@ function getMatches() {
             //            $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         };
 
-        var userData = {
-            name: "",
-            photo: "",
-            friendDifference: 1000
-        };
-        var userScores = userData.scores;
-
-        console.log(userScores);
-
-        var totalDifference = 0;
-        for (var i = 0; i < friends.length; i++) {
-            console.log(friends[i]);
-            totalDifference = 0;
-        }
-        for (var j = 0; i < friends[i].scores[j]; j++) {
-            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
-
-            if (totalDifference <= userData.friendDifference) {
-                userData.name = friends[i].name;
-                userData.photo = friends[i].photo;
-                userData.friendDifference = totalDifference;
-            }
-        }
+//        var bestMatch = {
+//            name: "",
+//            photo: "",
+//            friendDifference: 1000
+//        };
+//        var userScores = user_info.scores;
+//
+//        console.log(userScores);
+//
+//        var totalDifference = 0;
+//        for (var i = 0; i < friends.length; i++) {
+//            console.log(friends[i]);
+//            totalDifference = 0;
+//        }
+//        for (var j = 0; i < friends[i].scores[j]; j++) {
+//            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+//
+//            if (totalDifference <= bestMatch.friendDifference) {
+//                bestMatch.name = friends[i].name;
+//                bestMatch.photo = friends[i].photo;
+//                bestMatch.friendDifference = totalDifference;
+//            }
+//        }
 
         // AJAX post the data to the friends API. 
         $.post('/api/friends', userData, function (data) {
