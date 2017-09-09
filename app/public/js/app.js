@@ -106,4 +106,4 @@ function matchFriends() {
 $("#submit").on("click", getMatches);
 
 getFriends();
-matchFriends()
+matchFriends();
