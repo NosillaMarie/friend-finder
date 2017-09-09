@@ -19,24 +19,24 @@ module.exports = function (app) {
 //            photo: "",
 //            friendDifference: 1000
 //        };
-//        var userScores = user_info.scores;
-//
-//        console.log(userScores);
-//
-//        var totalDifference = 0;
-//        for (var i = 0; i < friends.length; i++) {
-//            console.log(friends[i]);
-//            totalDifference = 0;
-//        }
-//        for (var j = 0; i < friends[i].scores[j]; j++) {
-//            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
-//
-//            if (totalDifference <= bestMatch.friendDifference) {
-//                bestMatch.name = friends[i].name;
-//                bestMatch.photo = friends[i].photo;
-//                bestMatch.friendDifference = totalDifference;
-//            }
-//        }
+        var userScores = user_info.scores;
+
+        console.log(userScores);
+
+        var totalDifference = 0;
+        for (var i = 0; i < friends.length; i++) {
+            console.log(friends[i]);
+            totalDifference = 0;
+        }
+        for (var j = 0; i < friends[i].scores[j]; j++) {
+            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+
+            if (totalDifference <= bestMatch.friendDifference) {
+                bestMatch.name = friends[i].name;
+                bestMatch.photo = friends[i].photo;
+                bestMatch.friendDifference = totalDifference;
+            }
+        }
 
 
 
