@@ -1,17 +1,17 @@
 {
-  "name": "friend-finder",
-  "version": "1.0.0",
-  "description": "This app is a \"dating app\" for friends. You enter information and then the scores of your answers are compared to other app users to find you the best friend match to hand out with.",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NosillaMarie/friend-finder.git"
-  },
-  "keywords": [
+    "name": "friend-finder",
+    "version": "1.0.0",
+    "description": "This app is a \"dating app\" for friends. You enter information and then the scores of your answers are compared to other app users to find you the best friend match to hand out with.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NosillaMarie/friend-finder.git"
+    },
+    "keywords": [
     "friend",
     "finder",
     "dating",
@@ -19,15 +19,15 @@
     "express",
     "servers"
   ],
-  "author": "Allison Liederman",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NosillaMarie/friend-finder/issues"
-  },
-  "homepage": "https://github.com/NosillaMarie/friend-finder#readme",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "path": "^0.12.7"
-  }
+    "author": "Allison Liederman",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/NosillaMarie/friend-finder/issues"
+    },
+    "homepage": "https://github.com/NosillaMarie/friend-finder#readme",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4",
+        "path": "^0.12.7"
+    }
 }
