@@ -27,11 +27,11 @@ module.exports = function (app) {
             }, 0);
             var diff = Math.abs(friend_scores - user_scores);
 
-            if (score <= diff) {
+            if (score <= diff)
                 match = friend;
 
-                score = diff;
-            }
+            score = diff;
+
         });
 
         res.json(match);

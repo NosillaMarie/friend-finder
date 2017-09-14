@@ -38,9 +38,9 @@ function getMatches() {
 
             //                        Show the modal with the best match
             $("#resultsModal").modal('toggle');
-//            $('#form1').each(function () {
-             //                this.reset();
-             //            });
+            $('#form1').each(function () {
+                this.reset();
+            });
 
 
         });
