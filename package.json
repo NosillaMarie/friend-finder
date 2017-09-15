@@ -12,13 +12,13 @@
         "url": "git+https://github.com/NosillaMarie/friend-finder.git"
     },
     "keywords": [
-    "friend",
-    "finder",
-    "dating",
-    "nodejs",
-    "express",
-    "servers"
-  ],
+        "friend",
+        "finder",
+        "dating",
+        "nodejs",
+        "express",
+        "servers"
+    ],
     "author": "Allison Liederman",
     "license": "ISC",
     "bugs": {
