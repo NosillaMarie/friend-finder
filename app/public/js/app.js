@@ -30,17 +30,17 @@ function getMatches() {
             userData.scores.push($(this).val());
         });
         // AJAX post the data to the friends API. 
-        $.post('/api/friends', userData, function (data) {
-            $("#matchName").text(data.name);
-            $('#matchImg').attr("src", data.photo);
-
-            $("#resultsModal").modal('toggle');
-            $('#form1').each(function () {
-                this.reset();
-            });
-
-
-        });
+//        $.post('/api/friends', userData, function (data) {
+//            $("#matchName").text(data.name);
+//            $('#matchImg').attr("src", data.photo);
+//
+//            $("#resultsModal").modal('toggle');
+//            $('#form1').each(function () {
+//                this.reset();
+//            });
+//
+//
+//        });
     } else {
         alert("Uh-Oh you missed something. Please fill out all fields before submitting!");
     }
