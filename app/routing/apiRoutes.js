@@ -13,23 +13,24 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         var user_info = req.body;
-        var match; // will be the best match from friends or first one
-        var score = 0; // the lowest difference between the user and current friend in loop
-        // Sum of all the scores in the user_info.scores array
+        var match;
+        var score = 0;
+
         var user_scores = user_info.scores.reduce(function (result, val) {
             return result += Number(val);
         }, 0);
 
         friends.forEach(function (friend) {
-            // Sum of all the scores in the friends.scores array
             var friend_scores = friend.scores.reduce(function (result, val) {
                 return result += Number(val);
             }, 0);
             var diff = Math.abs(friend_scores - user_scores);
 
-            if (score <= diff) match = friend;
+            if (score <= diff) {
+                match = friend;
 
-            score = diff;
+                score = diff;
+            }
         });
 
         res.json(match);
