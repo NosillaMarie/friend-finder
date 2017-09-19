@@ -26,9 +26,9 @@
     },
     "homepage": "https://github.com/NosillaMarie/friend-finder#readme",
     "dependencies": {
-        "body-parser": "^1.17.2",
+        "body-parser": "^1.18.1",
         "express": "^4.15.4",
-        "path": "^0.12.7",
-        "nodemon": "~1.0.14"
+        "nodemon": "^1.0.20",
+        "path": "^0.12.7"
     }
 }
