@@ -31,6 +31,7 @@ module.exports = function (app) {
 
                 score = diff;
             }
+
         });
 
         res.json(match);

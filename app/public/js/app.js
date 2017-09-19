@@ -26,7 +26,7 @@ function getMatches() {
             photo: $("#photo").val(),
             scores: []
         };
-        $('container select').each(function () {
+        $('.container select').each(function () {
             userData.scores.push($(this).val());
         });
         // AJAX post the data to the friends API. 
@@ -35,9 +35,6 @@ function getMatches() {
             $('#matchImg').attr("src", data.photo);
 
             $("#resultsModal").modal('toggle');
-            $('#form1').each(function () {
-                this.reset();
-            });
 
 
         });
@@ -47,7 +44,5 @@ function getMatches() {
 
     return false;
 }
-
-
 
 $("#submit").on("click", getMatches);
