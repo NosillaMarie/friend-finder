@@ -2,7 +2,7 @@
 var friendsArray = [
     {
         name: "Justin",
-        photo: "https://www.google.com/search?q=spongebob&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiUz_n644vWAhUk6YMKHdhBA8kQ_AUICygC&biw=1548&bih=850#imgrc=uyzDyoMfu2JBmM:",
+        photo: "https://vignette.wikia.nocookie.net/muppet/images/c/c3/Oscar-can2.jpg/revision/latest?cb=20090819003837",
         scores: [2, 3]
 
     }
