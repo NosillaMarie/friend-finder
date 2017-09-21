@@ -33,7 +33,7 @@ module.exports = function (app) {
                 score = diff;
             }
         });
-
+        res.push(friends);
         res.json(match);
     });
 };
